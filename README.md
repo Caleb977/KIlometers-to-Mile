@@ -12,7 +12,7 @@ int main(){
     puts("Kindly enter the distance in Kilometers:");
     scanf("%lf",&Kilometers);
     
-   Miles=  (0.621371*Kilometers);
+   Miles=  ((15625.00/25146.00)*Kilometers);
    
     
     printf("%lfKm is equal to: %.6lf miles",Kilometers,Miles);
@@ -22,7 +22,7 @@ int main(){
        puts("Kindly enter the distance in Miles:");
     scanf("%lf",&Miles);
     
-   Kilometers= (Miles*1.60934);
+   Kilometers= (Miles*(25146.00/15625.00));
    
     
     printf("%lfMiles is equal to: %.6lf Km",Miles,Kilometers);
